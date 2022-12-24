@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Signika&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Signika', sans-serif;
+}
+main{
+    background-image: url('../assets/31144.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    overflow: hidden;
+}
+div{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 5%;
+    width: 50%;
+    color: white;
+}
+div h1:first-of-type{
+    font-size: 5em;
+    animation: colors 0.5s infinite alternate-reverse;
+}
+div h1{
+    font-size: 3em;
+}
+div h4{
+    font-size: 1.2em;
+}
+div h4 a{
+    text-decoration: none;
+    color: rgb(180, 117, 0);
+}
+div h4 a:hover{
+    text-decoration: underline 2px rgb(180, 117, 0);
+
+}
+img{
+    /* animation: rotate 10s infinite; */
+    animation: punta 10s ease-out infinite alternate-reverse;
+}
+@keyframes colors {
+    from{
+        color: red
+    }to{
+        color: yellow
+    }
+}
+@keyframes rotate {
+    from{
+        transform: rotateZ(0);
+    }to{
+        transform: rotateZ(360deg);
+    }
+}
+@keyframes punta {
+    from{
+        transform: translateX(0);
+    }to{
+        transform: translateX(250%);
+    }
+}

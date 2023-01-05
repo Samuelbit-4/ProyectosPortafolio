@@ -4,7 +4,10 @@
     --text-primary-color: #0c0b31;
     --text-secondary-color: #0c0b31b3;
     --color-hover-button: #523be4;
-
+    --color-hover-button-2: #7f6bfd;
+    --color-hover-button-3: rgb(231, 231, 231);
+    --color-fondo-section: #f4f4fa;
+    --padding-default: 2% 8%;
 }
 
 * {
@@ -23,7 +26,7 @@ h4 {
 
 header {
     width: 100%;
-    height: max-content;
+    height: 80px;
     border-bottom: 1px solid gray;
 }
 
@@ -32,17 +35,18 @@ nav {
     height: 100%;
     display: flex;
     padding: 0% 8%;
-    align-items: center;
 }
 nav svg{
-    width: 10%;
+    color: rgb(212, 24, 181);
+    width: 5%;
+    cursor: pointer;
 }
 nav svg:hover{
-    color: pink
+    color: black
 }
 nav input[type="text"] {
     border-radius: 2px solid gray;
-    width: 25%;
+    width: 20%;
     margin: 0% 8%;
 }
 
@@ -56,6 +60,136 @@ nav input[type="text"] {
 .ul-header li {
     display: inline-block;
     list-style-type: none;
-    margin: 2%;
     width: max-content;
+    border-left: 1px solid gray;
+    padding: 2%;
+}
+.ul-header li:last-of-type{
+    border-right: none;
+}
+.ul-header li a{
+    text-decoration: none;
+    color: var(--text-primary-color);
+    font-weight: bolder;  
+    height: 100%;
+}
+.ul-header li a:hover{
+    color: var(--color-hover-button)
+}
+.img-section{
+    width: 60%;
+    height: 90%;
+}
+.section-1{
+    display: flex;
+    height: 65vh;
+    padding: 2% 8%;
+    align-items: center;
+}
+.section-1-div{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    padding-left:2% ;
+}
+.section-1-div h1{
+    font-size: 5em;
+    margin-bottom: 8%;
+    
+}
+.section-1-div div{
+    display: flex;
+    width: 85%;
+    justify-content: space-between;
+    align-items: center;
+}
+.button-1{
+    outline:auto;
+    border-radius: 25px;
+    padding: 3% 5%;
+    height: 2%;
+    color: white;
+    background-color: #523be4;
+    font-size: 1em;
+    cursor: pointer;
+}
+.button-1:hover{
+    background-color: var(--color-hover-button-2)
+}
+.button-2{
+    border-radius: 25px;
+    font-size: 1em;
+    padding: 3% 5%;
+    color: black;
+    background-color: white;
+    border: 1px solid gray;
+    cursor: pointer;
+}
+.button-2:hover{
+    background-color: var(--color-hover-button-3);
+}
+.section-2{
+    display: flex;
+    padding: var(--padding-default);
+}
+.section-2 div{
+    width: 70%;
+}
+.section-2 div h2{
+    font-size: 2.2em;
+    padding: 2% 0px;
+}
+.section-2 ul li{
+    list-style-type: none;
+    padding: 2% 0px;
+}
+.section-2 img{
+    width: 28%;
+}
+.fondo{
+    background-color: var(--color-fondo-section);
+}
+.button-3{
+    background-color: transparent;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    font-size: 1em;
+    cursor: pointer;
+}
+.button-3:hover{
+    text-decoration: underline;
+    text-decoration-color: #0c0b31;
+}
+.flex-c{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.flex-r{
+    display: flex;
+    flex-direction: row;
+}
+.w-70{
+    width: 70%;
+}
+.section-3-carrusel{
+    display: flex;
+    background-color: var(--color-fondo-section);
+    padding: var(--padding-default);
+
+}
+.section-3-carrusel div{
+    width: 33.33%;
+}
+.section-4{
+    background-color: white;
+    padding: var(--padding-default);
+}
+.material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 48
 }

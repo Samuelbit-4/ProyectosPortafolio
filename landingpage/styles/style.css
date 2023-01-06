@@ -23,7 +23,12 @@ h3,
 h4 {
     color: var(--text-primary-color)
 }
-
+h2{
+    font-size: 2.2em;
+}
+p{
+    font-size: 1.2em;
+}
 header {
     width: 100%;
     height: 80px;
@@ -169,6 +174,7 @@ nav input[type="text"] {
 .flex-r{
     display: flex;
     flex-direction: row;
+    width: 100%;
 }
 .w-70{
     width: 70%;
@@ -185,6 +191,68 @@ nav input[type="text"] {
 .section-4{
     background-color: white;
     padding: var(--padding-default);
+    justify-content: center;
+    align-items: center;
+}
+.section-4 div:first-child{
+    width: 50%;
+    align-items: center;
+}
+
+.section-4 div ul li{
+    list-style-type: none;
+    padding: 2% 0px;
+    font-weight: bolder;
+}
+.section-4 div div{
+    justify-content: space-between;
+    align-items: center;
+    margin: 2% 0px;
+}
+.section-4 div div button:first-of-type{
+    outline:auto;
+    border-radius: 25px;
+    padding: 3% 5%;
+    width: 30%;
+    color: white;
+    background-color: #523be4;
+    font-size: 1em;
+    cursor: pointer;
+    
+}
+.section-4 div div button:first-of-type:hover{
+    background-color: var(--color-hover-button-2)
+}
+.section-4 div div button:last-of-type{
+    background-color: transparent;
+    outline: none;
+    border: none;
+    text-align: center;
+    width: 70%;
+    font-size: 1.3em;
+    padding: 2%;
+}
+.section-4 div div button:last-of-type:hover{
+    text-decoration: underline;
+    text-decoration-color: #0c0b31;
+}
+.section-4 p:last-child{
+    font-size: 0.9em;
+    color: gray;
+}
+.section-4 img{
+    width: 42%;
+}
+.section-5{
+    padding: var(--padding-default);
+    align-items: center;
+}
+.section-5 div:first-child{
+    width: 50%;
+}
+.section-5 div:first-child img{
+    width: 100%;
+    height: 100%;
 }
 .material-symbols-outlined {
     font-variation-settings:

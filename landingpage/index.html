@@ -6,7 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/style.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <title>Lyft</title>
 </head>
 
@@ -28,13 +29,18 @@
                     </path>
                 </g>
             </svg>
-            <input type="text" placeholder="¿A donde vas?">
+            <input type="text" placeholder="¿A donde vas?" class="input-Text">
             <ul class="ul-header">
                 <li><a href="">CONDUCTOR</a></li>
                 <li><a href="">VIAJERO</a></li>
                 <li><a href="">NEGOCIO</a></li>
                 <li><a href="">INICIAR SESIÓN</a></li>
-                <li><a href="">REGISTRARME</a></li>
+                <li><a href="">REGISTRARME</a>
+                    <ul hidden>
+                        <li><a href="">Registrate para viajar</a></li>
+                        <li><a href="">Aplicar para manejar</a></li>
+                    </ul>
+                </li>
             </ul>
         </nav>
     </header>
@@ -69,8 +75,9 @@
                 </ul>
                 <div class="flex-r">
                     <button class="button-1">Enviar solicitud para manejar</button>
-                    <button class="button-3">Cómo funcionan los pagos de los conductores<span class="material-symbols-outlined">
-                        arrow_forward
+                    <button class="button-3">Cómo funcionan los pagos de los conductores<span
+                            class="material-symbols-outlined">
+                            arrow_forward
                         </span></button>
                 </div>
             </div>
@@ -127,20 +134,22 @@
                 <div class="flex-r">
                     <button>Pedir un viaje</button>
                     <button>Más información sobre como viajar con Lyft<span class="material-symbols-outlined">
-                        arrow_forward
+                            arrow_forward
                         </span></button>
                 </div>
                 <p>Únete a Lyft Pink y desbloquea que pasen por ti más rápido sin costo adicional, precios exclusivos
                     para miembros y asistencia en la carretera gratis para tu auto propio, directamente en la app. Todo
                     por solo $9.99 al mes. Disponible solo en los EE. UU.</p>
             </div>
-            <img src="https://images.ctfassets.net/q8mvene1wzq4/2R3M8S6ZIA7SXbMsCkxvMI/01d24491659f6678df39d245e080045d/rider_stylized_text_image.png?w=1500&q=60&fm=webp" alt="">
+            <img src="https://images.ctfassets.net/q8mvene1wzq4/2R3M8S6ZIA7SXbMsCkxvMI/01d24491659f6678df39d245e080045d/rider_stylized_text_image.png?w=1500&q=60&fm=webp"
+                alt="">
         </section>
         <section class="section-5 flex-r">
             <div>
-                <img src="https://images.ctfassets.net/q8mvene1wzq4/1H8Zw8AkZvMYqLkWnBjO3f/a2406a01c7a91b37f78c427326006fa8/Lyft_Pink_Image_V3.jpg?w=1500&q=60&fm=webp" alt="">
+                <img src="https://images.ctfassets.net/q8mvene1wzq4/1H8Zw8AkZvMYqLkWnBjO3f/a2406a01c7a91b37f78c427326006fa8/Lyft_Pink_Image_V3.jpg?w=1500&q=60&fm=webp"
+                    alt="">
             </div>
-            <div>
+            <div class="text-5">
                 <h2>Estamos tirando la casa por la ventana</h2>
                 <p>Inscríbete al nuevo Lyft Pink para disfrutar de ascensos gratuitos a Priority, ahorros exclusivos y
                     precios preferentes en las modalidades de viaje Lux, XL y Preferente. Nuestros miembros ahorran un
@@ -167,7 +176,20 @@
                 <p>Sujeto a los Términos y condiciones de Lyft Pink y los Términos de servicio de Lyft.</p>
             </div>
         </section>
-        <section>
+        <section class="section-6 flex-r">
+            <div>
+                <h2>Viaja. Sube a una bicicleta. Sube a un scooter. Disfruta al máximo.</h2>
+                <p>Tenemos opciones para llevarte a donde tengas que ir. Elige un tipo de viaje* que se ajuste a tu
+                    estado de ánimo y presupuesto.</p>
+                <button><span class="material-symbols-outlined">
+                        arrow_back
+                    </span>
+                </button>
+                <button><span class="material-symbols-outlined">
+                        arrow_forward
+                    </span>
+                </button>
+            </div>
             <div>
                 <h2>Espera y ahorra</h2>
                 <img src="./assets/carrusel/carrusel1.PNG" alt="">
@@ -294,25 +316,34 @@
                     transporte público varían según la región.</li>
             </ul>
         </section>
-        <div>
-            <h1>¿Listx para salir? Obtener un estimado.</h1>
-            <input type="text" name="" id="" placeholder="Ingresa tu punto de partida">
-            <input type="text" name="" id="" placeholder="Ingresa tu destino">
-            <button>Get estimate</button>
+        <div class="div-s-2">
+            <h1>¿Listx para salir?<br> Obtener un estimado.</h1>
+            <input type="text" name="" id="" placeholder="Ingresa tu punto de partida" class="input-Text">
+            <input type="text" name="" id="" placeholder="Ingresa tu destino" class="input-Text">
+            <button class="button-s">Get estimate</button>
         </div>
-        <section>
+        <section class="section-7 flex-r">
             <img src="./assets/home_pinkpaint_safety.webp" alt="">
-            <h3>LA SEGURIDAD ANTE TODO</h3>
-            <h2>Tu seguridad es siempre nuestra prioridad.</h2>
-            <p>Nos preocupamos por ti durante cada viaje, y antes y después de este. Monitoreamos los viajes para
-                ayudarte a llegar a donde necesitas ir. Si alguna vez lo necesitas, estaremos disponibles para ayudarte.
-            </p>
-            <div>
-                <button>Conoce más sobre la seguridad</button>
-                <button>Normas de la comunidad</button>
+            <div class="div-s-6">
+                <h3>LA SEGURIDAD ANTE TODO</h3>
+                <h2>Tu seguridad es siempre nuestra prioridad.</h2>
+                <p>Nos preocupamos por ti durante cada viaje, y antes y después de este. Monitoreamos los viajes para
+                    ayudarte a llegar a donde necesitas ir. Si alguna vez lo necesitas, estaremos disponibles para
+                    ayudarte.
+                </p>
+                <div class="flex-r">
+                    <button>Conoce más sobre la seguridad</button>
+                    <button class="button-3">Normas de la comunidad
+                        <span
+                            class="material-symbols-outlined">
+                            arrow_forward
+                        </span>
+                    </button>
+                </div>
             </div>
+            
         </section>
-        <section>
+        <section class="section-8 flex-c ">
             <h3>LyftUP</h3>
             <img src="./assets/home_pinkpaint_lyftup.jpg" alt="">
             <h2>Hacer que millones de viajes sean más accesibles</h2>
@@ -320,23 +351,35 @@
                 la comunidad. Y acceso a productos y servicios esenciales, como despensas, atención médica y centros de
                 votación. Nuestra iniciativa LyftUp hace más accesibles los viajes para millones de personas y ayuda a
                 acercar aún más a las comunidades.</p>
-            <a href="">Conoce más sobre nuestros programas LyftUP</a>
+            <a href="" class="button-3">Conoce más sobre nuestros programas LyftUP<span
+                class="material-symbols-outlined">
+                arrow_forward
+            </span></a>
         </section>
-        <section>
+        <section class="section-9 flex-c fondo">
             <img src="./assets/bussines.svg" alt="">
-            <div>JAVASCRIPT</div>
+            <div>
+                <h1>Ayudamos a que el mundo avance</h1>
+                <h1>ideas</h1>
+                <h1>entrevistados</h1>
+                <h1>pacientes</h1>
+                <h1>prospectos</h1>
+                <h1>negocios</h1>
+                <h1>personas VIP</h1>
+                <h1>visitantes</h1>
+            </div>
             <p>Desde soluciones de transporte económicas hasta un reporte de gastos sencillo, ayudaremos a llevar a tu
                 negocio más lejos,
                 asegurándonos de que tu personal llegue a donde tiene que ir.
             </p>
-            <button>Learn more</button>
-            <div>
-                MARCAS
+            <button class="button-s">Learn more</button>
+            <div class="carrusel-marcas">
+                MARCAS **PROCESO
             </div>
         </section>
     </main>
-    <footer>
-        <div>
+    <footer class="flex-r">
+        <div class="f-1">
             <h3>Conductor</h3>
             <ul>
                 <li><a href="">Ser conductor</a></li>
@@ -353,7 +396,7 @@
                 <li><a href="">El blog del conductor</a></li>
             </ul>
         </div>
-        <div>
+        <div class="f-1">
             <h3>Viajero</h3>
             <ul>
                 <li><a href="">Ser conductor</a></li>
@@ -370,7 +413,7 @@
                 <li><a href="">El blog del conductor</a></li>
             </ul>
         </div>
-        <div>
+        <div class="f-1">
             <h3>Lyft</h3>
             <ul>
                 <li><a href="">Ser conductor</a></li>
@@ -387,10 +430,10 @@
                 <li><a href="">El blog del conductor</a></li>
             </ul>
         </div>
-        <div>
-            <button>App de lyft driver</button>
-            <button>App de lyft</button>
-            <button>Pedir viaje en la Web</button>
+        <div class="flex-c">
+            <button class="button-2">App de lyft driver</button>
+            <button class="button-2">App de lyft</button>
+            <button class="button-2">Pedir viaje en la Web</button>
         </div>
         <h1>PROYECTO CREADO POR SAMUEL AMAYA, TOMANDO EL DISEÑO DE LYFT.COM</h1>
     </footer>

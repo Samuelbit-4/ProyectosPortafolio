@@ -8,6 +8,8 @@
     --color-hover-button-3: rgb(231, 231, 231);
     --color-fondo-section: #f4f4fa;
     --padding-default: 2% 8%;
+    --text-color-p: #162341;
+    --color-fondo-section-2: #dcdcff;
 }
 
 * {
@@ -28,18 +30,27 @@ h2{
 }
 p{
     font-size: 1.2em;
+    color: var(--text-color-p);
 }
 header {
     width: 100%;
     height: 80px;
-    border-bottom: 1px solid gray;
+    border-bottom: 1px solid rgb(189, 189, 189);
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    background-color: white;
 }
-
+main{
+    position: relative;
+    margin-top: 80px;
+}
 nav {
     width: 100%;
     height: 100%;
     display: flex;
     padding: 0% 8%;
+    align-items: center;
 }
 nav svg{
     color: rgb(212, 24, 181);
@@ -63,11 +74,13 @@ nav input[type="text"] {
 }
 
 .ul-header li {
-    display: inline-block;
+    display: flex;
     list-style-type: none;
     width: max-content;
-    border-left: 1px solid gray;
+    border-left: 1px solid rgb(189, 189, 189);
     padding: 2%;
+    text-align: center;
+    gap: 2%;
 }
 .ul-header li:last-of-type{
     border-right: none;
@@ -77,6 +90,8 @@ nav input[type="text"] {
     color: var(--text-primary-color);
     font-weight: bolder;  
     height: 100%;
+    text-align: center;
+    width: 100%;
 }
 .ul-header li a:hover{
     color: var(--color-hover-button)
@@ -249,10 +264,209 @@ nav input[type="text"] {
 }
 .section-5 div:first-child{
     width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .section-5 div:first-child img{
+    width: 75%;
+}
+.section-5 div:last-child{
+    width: 50%;
+}
+.section-5 div:last-child h2{
+    font-size: 2.5em;
+    line-height: 60px;
+}
+.section-5 .text-5 ul li{
+    list-style-type: none;
+    padding: 2% 0px;
+    font-weight: bolder;
+    width: 75%;
+}
+.section-5 .text-5 ul li h4{
+    font-weight: lighter;
+}
+.section-5 button{
+    outline:auto;
+    border-radius: 25px;
+    padding: 2% 0px;
+    width: 40%;
+    color: white;
+    background-color: #523be4;
+    font-size: 1em;
+    cursor: pointer;
+    margin-top: 2%;
+    margin-bottom: 1.5%;
+}
+.section-5 button:hover{
+    background-color: var(--color-hover-button-2)
+}
+.section-5 p:last-child{
+    color: gray;
+    font-size: 0.9em;
+}
+.div-s-2{
+    background-color: var(--color-fondo-section-2);
+    padding: var(--padding-default);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 2%;
+}
+.input-Text{
+    border-radius: 10px;
+    padding: 15px;
+    width: 20%;
+    border: 1px solid rgb(190, 190, 190);
+    outline: none;
+}
+.div-s-2 button:hover{
+    background-color: var(--color-hover-button-3);
+}
+.section-7{
+    padding: 0px 10%;
+    gap: 3%;
+    align-items: center;
+}
+.section-7 img {
+    width: 35%;
+}
+.div-s-6{
+    padding: 3% 3% 3% 10%;
+}
+.div-s-6 h3{
+    font-size: 0.9em;
+    line-height: 50px;
+}
+.div-s-6 h2{
+    width: 80%;
+}
+.div-s-6 p{
+    font-weight: lighter;
+    padding: 2% 0px;
+}
+.div-s-6 div button:first-child{
+    outline:auto;
+    border-radius: 25px;
+    width: 40%;
+    padding: 1% 5%;
+    font-weight: bold;
+    color: white;
+    background-color: #523be4;
+    font-size: 1em;
+    cursor: pointer;
+}
+.div-s-6 div.flex-r{
+    gap: 5%;
+    align-items: center;
+}
+.div-s-6 div.flex-r span{
+    font-size: 1.2em;
+}
+.div-s-6 div button:first-child:hover{
+    background-color: var(--color-hover-button-2);
+}
+.div-s-6 div button.button-3{
+    padding: 0;
+    font-weight: bolder;
+}
+.section-8{
+    padding: var(--padding-default);
+}
+.section-8 h3{
+    margin-bottom: 5%;
+}
+.section-8 img{
+    margin-bottom: 5%;
+}
+.section-8 h2{
+    margin-bottom: 2%;
+    font-size: 1.8em;
+}
+.section-8 p{
+    font-weight: lighter;
+    font-size: 1em;
+}
+.section-8 a{
+    margin: 5% 0px;
+    text-decoration: none;
+    font-size: 1em;
+    color: black;
+    font-weight: bolder;
+}
+.section-8 a span{
+    font-size: 1.1em;
+    font-weight: bolder;
+    padding: 10px;
+}
+.section-9{
+    padding: var(--padding-default);
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 5px 20px grey;
+}
+.section-9 img{
+    width: 15%;
+}
+.section-9 h1{
+    font-size: 2.5em;
+    text-align: center;
+}
+.section-9 p{
+    font-size: 1em;
+    line-height: 25px;
+    text-align: center;
+    padding: 0px 10% 2% 10%;
+}
+
+.button-s{
+    border-radius: 25px;
+    font-size: 1em;
+    padding: 15px;
+    color: black;
+    background-color: white;
+    border-color: transparent;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    cursor: pointer;   
+}
+.button-s:hover{
+    background-color: var(--color-hover-button-3);
+}
+.carrusel-marcas{
+    margin-top: 5%;
+}
+footer{
+    padding: var(--padding-default);
+    gap: 5%;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.f-1 h3{
+    padding-bottom: 5%;
+}
+.f-1 ul li{
+    list-style-type: none;
+    padding: 2% 0px;
+}
+.f-1 ul li a{
+    text-decoration: none;
+    color: black
+}
+.f-1 ul li a:hover{
+    text-decoration: underline;
+    text-decoration-color: black ;
+}
+footer .flex-c{
+    justify-content: flex-start;
+    gap: 5%;
+}
+footer .flex-c .button-2{
     width: 100%;
-    height: 100%;
+}
+footer h1{
+    padding: 5%;
+    animation: nombre 2s infinite alternate-reverse;
 }
 .material-symbols-outlined {
     font-variation-settings:
@@ -260,4 +474,13 @@ nav input[type="text"] {
     'wght' 400,
     'GRAD' 0,
     'opsz' 48
+}
+@keyframes nombre {
+    from{
+        color:rgb(99, 99, 2);
+        text-shadow: 0px 10px 20px black
+    }
+    to{
+        color: black;
+    }
 }

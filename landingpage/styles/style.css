@@ -10,6 +10,7 @@
     --padding-default: 2% 8%;
     --text-color-p: #162341;
     --color-fondo-section-2: #dcdcff;
+    --border-color: rgb(189, 189, 189);
 }
 
 * {
@@ -72,7 +73,17 @@ nav input[type="text"] {
     justify-content: space-between;
     width: 65%;
 }
-
+#cajaOpciones{
+    position: absolute;
+    top: 100%;
+    right: 4%;
+    border: 1px solid rgb(189, 189, 189);
+    padding: 20px;
+    background-color: white;
+}
+#cajaOpciones li{
+    border: none;
+}
 .ul-header li {
     display: flex;
     list-style-type: none;
@@ -195,13 +206,25 @@ nav input[type="text"] {
     width: 70%;
 }
 .section-3-carrusel{
-    display: flex;
     background-color: var(--color-fondo-section);
     padding: var(--padding-default);
-
+    justify-content: center;
+    align-items: center;
+    gap: 3%;
 }
-.section-3-carrusel div{
-    width: 33.33%;
+.btn-carrusel{
+    padding-top: 5%;
+    width: 100%;
+    justify-content: center;
+    gap: 2%
+}
+.btn-carrusel button{
+    outline: none;
+    background-color: white;
+    padding: 10px;
+    border-radius: 50%;
+    border: 1px solid var(--border-color);
+    font-weight: bolder;
 }
 .section-4{
     background-color: white;

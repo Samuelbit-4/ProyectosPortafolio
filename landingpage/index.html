@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/style.css">
+    <link rel="shortcut icon" href="./assets/bussines.svg" type="image/x-icon">
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <title>Lyft</title>
@@ -35,8 +36,8 @@
                 <li><a href="">VIAJERO</a></li>
                 <li><a href="">NEGOCIO</a></li>
                 <li><a href="">INICIAR SESIÓN</a></li>
-                <li><a href="">REGISTRARME</a>
-                    <ul hidden>
+                <li id="btnRegistrar"><a href="">REGISTRARME</a>
+                    <ul hidden id="cajaOpciones">
                         <li><a href="">Registrate para viajar</a></li>
                         <li><a href="">Aplicar para manejar</a></li>
                     </ul>
@@ -83,42 +84,48 @@
             </div>
             <img src="./assets/elegant-woman-driver-looking-at-backseat-smiling-happy.jpg" alt="">
         </section>
-        <section class="section-3-carrusel">
-            <div>
-                <img src="" alt="">
-                <p>"Por ser estudiante, me cuesta trabajo hacer la tarea teniendo horarios fijos. Empecé a manejar más
-                    con Lyft y me di cuenta de que era la oportunidad perfecta para ganar dinero y trabajar por mi
-                    cuenta. Manejar con Lyft me da la libertad de elegir mi horario y poder concentrarme en la escuela,
-                    que es mi prioridad principal."</p>
-                <blockquote><i>-Harold <br>Maneja con Lyft desde 2020</i></blockquote>
+        <section class="section-3-carrusel flex-c">
+            <div class="flex-r">
+                <div>
+                    <img src="" alt="">
+                    <p>"Por ser estudiante, me cuesta trabajo hacer la tarea teniendo horarios fijos. Empecé a manejar más
+                        con Lyft y me di cuenta de que era la oportunidad perfecta para ganar dinero y trabajar por mi
+                        cuenta. Manejar con Lyft me da la libertad de elegir mi horario y poder concentrarme en la escuela,
+                        que es mi prioridad principal."</p>
+                    <blockquote><i>-Harold <br>Maneja con Lyft desde 2020</i></blockquote>
+                </div>
+                <div>
+                    <img src="" alt="">
+                    <p>"Mi filosofía es muy simple. No te cuesta un centavo ser amable, pero te costará todo si no lo eres.
+                        Si estoy libre y alguien necesita mi ayuda, seré la primera en brindarla, sin pensarlo."</p>
+                    <blockquote><i>-Mary <br>Maneja con Lyft desde 2019</i></blockquote>
+                </div>
+                <div>
+                    <img src="" alt="">
+                    <p>"Soy veterana de los Cuerpos de Marines y tengo una discapacidad del 100 % por la que ya no puedo
+                        trabajar en un ambiente estructurado. Las pocas horas a la semana en las que manejo me ayudan a
+                        conectar con mi comunidad y me dan un dinero extra para llegar a fin de mes."</p>
+                    <blockquote><i>-Christine <br>Maneja con Lyft desde 2016</i></blockquote>
+                </div>
+                <div>
+                    <img src="" alt="">
+                    <p>"Manejar con Lyft es la manera perfecta de ganar dinero y estar ahí cuando mi familia lo necesite. Me
+                        encanta brindarles a mis pasajeros una forma para ir del punto A al B. ¡La independencia es clave
+                        para mí y me gusta conocer gente nueva mientras manejo!"</p>
+                    <blockquote><i>-Timothy <br>Maneja con Lyft desde 2017</i></blockquote>
+                </div>
             </div>
-            <div>
-                <img src="" alt="">
-                <p>"Mi filosofía es muy simple. No te cuesta un centavo ser amable, pero te costará todo si no lo eres.
-                    Si estoy libre y alguien necesita mi ayuda, seré la primera en brindarla, sin pensarlo."</p>
-                <blockquote><i>-Mary <br>Maneja con Lyft desde 2019</i></blockquote>
-            </div>
-            <div>
-                <img src="" alt="">
-                <p>"Soy veterana de los Cuerpos de Marines y tengo una discapacidad del 100 % por la que ya no puedo
-                    trabajar en un ambiente estructurado. Las pocas horas a la semana en las que manejo me ayudan a
-                    conectar con mi comunidad y me dan un dinero extra para llegar a fin de mes."</p>
-                <blockquote><i>-Christine <br>Maneja con Lyft desde 2016</i></blockquote>
-            </div>
-            <div>
-                <img src="" alt="">
-                <p>"Manejar con Lyft es la manera perfecta de ganar dinero y estar ahí cuando mi familia lo necesite. Me
-                    encanta brindarles a mis pasajeros una forma para ir del punto A al B. ¡La independencia es clave
-                    para mí y me gusta conocer gente nueva mientras manejo!"</p>
-                <blockquote><i>-Timothy <br>Maneja con Lyft desde 2017</i></blockquote>
-            </div>
-            <div>
-                <button>antes</button>
-                <button>c</button>
-                <button>c</button>
-                <button>c</button>
-                <button>c</button>
-                <button>despues</button>
+            <div class="btn-carrusel flex-r">
+                <button><span class="material-symbols-outlined">
+                    arrow_back
+                </span></button>
+                <input type="radio" name="carrusel" id="cOp1">
+                <input type="radio" name="carrusel" id="cOp2">
+                <input type="radio" name="carrusel" id="cOp3">
+                <input type="radio" name="carrusel" id="cOp4">
+                <button><span class="material-symbols-outlined">
+                    arrow_forward
+                </span></button>
             </div>
         </section>
         <section class="section-4 flex-r">
@@ -437,6 +444,7 @@
         </div>
         <h1>PROYECTO CREADO POR SAMUEL AMAYA, TOMANDO EL DISEÑO DE LYFT.COM</h1>
     </footer>
+    <script src="./js/main.js"></script>
 </body>
 
 </html>

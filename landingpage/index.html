@@ -85,18 +85,21 @@
             <img src="./assets/elegant-woman-driver-looking-at-backseat-smiling-happy.jpg" alt="">
         </section>
         <section class="section-3-carrusel flex-c">
-            <div class="flex-r">
+            <div class="flex-r" id="carrusel1">
                 <div>
                     <img src="" alt="">
-                    <p>"Por ser estudiante, me cuesta trabajo hacer la tarea teniendo horarios fijos. Empecé a manejar más
+                    <p>"Por ser estudiante, me cuesta trabajo hacer la tarea teniendo horarios fijos. Empecé a manejar
+                        más
                         con Lyft y me di cuenta de que era la oportunidad perfecta para ganar dinero y trabajar por mi
-                        cuenta. Manejar con Lyft me da la libertad de elegir mi horario y poder concentrarme en la escuela,
+                        cuenta. Manejar con Lyft me da la libertad de elegir mi horario y poder concentrarme en la
+                        escuela,
                         que es mi prioridad principal."</p>
                     <blockquote><i>-Harold <br>Maneja con Lyft desde 2020</i></blockquote>
                 </div>
                 <div>
                     <img src="" alt="">
-                    <p>"Mi filosofía es muy simple. No te cuesta un centavo ser amable, pero te costará todo si no lo eres.
+                    <p>"Mi filosofía es muy simple. No te cuesta un centavo ser amable, pero te costará todo si no lo
+                        eres.
                         Si estoy libre y alguien necesita mi ayuda, seré la primera en brindarla, sin pensarlo."</p>
                     <blockquote><i>-Mary <br>Maneja con Lyft desde 2019</i></blockquote>
                 </div>
@@ -109,22 +112,26 @@
                 </div>
                 <div>
                     <img src="" alt="">
-                    <p>"Manejar con Lyft es la manera perfecta de ganar dinero y estar ahí cuando mi familia lo necesite. Me
-                        encanta brindarles a mis pasajeros una forma para ir del punto A al B. ¡La independencia es clave
+                    <p>"Manejar con Lyft es la manera perfecta de ganar dinero y estar ahí cuando mi familia lo
+                        necesite. Me
+                        encanta brindarles a mis pasajeros una forma para ir del punto A al B. ¡La independencia es
+                        clave
                         para mí y me gusta conocer gente nueva mientras manejo!"</p>
                     <blockquote><i>-Timothy <br>Maneja con Lyft desde 2017</i></blockquote>
                 </div>
             </div>
             <div class="btn-carrusel flex-r">
-                <button><span class="material-symbols-outlined">
-                    arrow_back
-                </span></button>
-                <input type="radio" name="carrusel" id="cOp1">
-                <input type="radio" name="carrusel" id="cOp2">
-                <input type="radio" name="carrusel" id="cOp3">
-                <input type="radio" name="carrusel" id="cOp4">
-                <button><span class="material-symbols-outlined">
-                    arrow_forward
+                <button id="btnRegresar"><span class="material-symbols-outlined">
+                        arrow_back
+                    </span></button>
+                <div id="posicionR">
+                    <input type="radio" name="carrusel" id="cOp1" disabled checked value="1">
+                    <input type="radio" name="carrusel" id="cOp2" disabled value="2">
+                    <input type="radio" name="carrusel" id="cOp3" disabled value="3">
+                    <input type="radio" name="carrusel" id="cOp4" disabled value="4">                    
+                </div>
+                <button id="btnSiguiente"><span class="material-symbols-outlined">
+                arrow_forward
                 </span></button>
             </div>
         </section>
@@ -341,14 +348,13 @@
                 <div class="flex-r">
                     <button>Conoce más sobre la seguridad</button>
                     <button class="button-3">Normas de la comunidad
-                        <span
-                            class="material-symbols-outlined">
+                        <span class="material-symbols-outlined">
                             arrow_forward
                         </span>
                     </button>
                 </div>
             </div>
-            
+
         </section>
         <section class="section-8 flex-c ">
             <h3>LyftUP</h3>
@@ -359,9 +365,9 @@
                 votación. Nuestra iniciativa LyftUp hace más accesibles los viajes para millones de personas y ayuda a
                 acercar aún más a las comunidades.</p>
             <a href="" class="button-3">Conoce más sobre nuestros programas LyftUP<span
-                class="material-symbols-outlined">
-                arrow_forward
-            </span></a>
+                    class="material-symbols-outlined">
+                    arrow_forward
+                </span></a>
         </section>
         <section class="section-9 flex-c fondo">
             <img src="./assets/bussines.svg" alt="">

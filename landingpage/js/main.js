@@ -1,11 +1,12 @@
 document.addEventListener("DOMContentLoaded", e =>{
+
     const btnRegistrar = document.querySelector("#btnRegistrar")
     const opcionesRegistrar = document.querySelector("#cajaOpciones")
     const textCarrusel1 = document.querySelectorAll("#carrusel1 div")
     const btnSiguienteC1 = document.querySelector("#btnSiguiente")
     const btnRegresarC1 = document.querySelector("#btnRegresar")
     const radioC1 = document.querySelectorAll('#posicionR input')
-
+    const carrusel1 = document.querySelector("#carrusel1")
 
     //EVENTO PARA ACTIVAR CUADROS DE REGISTRO
     btnRegistrar.addEventListener("mouseover", e=>{
@@ -45,7 +46,24 @@ document.addEventListener("DOMContentLoaded", e =>{
         valorA++;
         input.forEach(elem =>{
             if(elem.getAttribute("value") ==  valorA){
-                elem.setAttribute("checked", "")             
+                elem.setAttribute("checked", "")
+                let valorDiv = valorA - 1;
+                let contador = 0;
+                arregloCarusel1.forEach(elem =>{                   
+                    elem.setAttribute("value", `${contador}`)
+                    contador++;
+                })
+                const divSelected = arregloCarusel1.find(elem =>{
+                    return elem.getAttribute("value") == valorDiv;
+                })      
+                arregloCarusel1.forEach(elem =>{
+                    elem.classList = "no-selected";
+                    if(elem === divSelected){
+                        elem.removeAttribute("class");
+                        elem.setAttribute("class", "selected")                        
+                    }   
+
+                })
             }
         })
     }
@@ -63,6 +81,26 @@ document.addEventListener("DOMContentLoaded", e =>{
         radioC1.forEach(elem =>{
             if(elem.getAttribute("value") ==  valorA){
                 elem.setAttribute("checked", "")
+                let valorDiv = valorA - 1;
+                let contador = 0;
+                arregloCarusel1.forEach(elem =>{                   
+                    elem.setAttribute("value", `${contador}`)
+                    contador++;
+                })
+                const divSelected = arregloCarusel1.find(elem =>{
+                    return elem.getAttribute("value") == valorDiv;
+                })      
+                arregloCarusel1.forEach(elem =>{
+                    elem.classList = "no-selected";
+                    if(elem === divSelected){
+                        elem.removeAttribute("class");
+                        elem.setAttribute("class", "selected")   
+                        if(elem.getAttribute("value") == 3){
+                            elem.removeAttribute("hidden");
+                            carrusel1.appendChild(elem)
+                        } 
+                    }                   
+                })
             }
         })
     }

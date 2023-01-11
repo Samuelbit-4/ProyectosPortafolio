@@ -355,7 +355,27 @@ nav input[type="text"] {
     gap: 2%;
 }
 .section-6{
-    overflow-x: scroll;
+    overflow-x: hidden;
+    padding: var(--padding-default);
+}
+.s-6-div-1{
+    width: 100%;
+}
+.div-mayor{
+    gap: 2%;
+}
+.w-25{
+    width: 25%;
+    padding: 5%;
+    box-shadow: 0px 0px 1px #2a2a2a;
+    gap: 2%;
+    border-radius: 12px;
+}
+.w-25 h2{
+    font-size: 1.2em;
+}
+.w-25 p{
+    visibility: hidden;
 }
 .input-Text{
     border-radius: 10px;

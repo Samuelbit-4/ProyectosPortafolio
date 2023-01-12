@@ -128,11 +128,11 @@
                     <input type="radio" name="carrusel" id="cOp1" disabled checked value="1">
                     <input type="radio" name="carrusel" id="cOp2" disabled value="2">
                     <input type="radio" name="carrusel" id="cOp3" disabled value="3">
-                    <input type="radio" name="carrusel" id="cOp4" disabled value="4">                    
+                    <input type="radio" name="carrusel" id="cOp4" disabled value="4">
                 </div>
                 <button id="btnSiguiente"><span class="material-symbols-outlined">
-                arrow_forward
-                </span></button>
+                        arrow_forward
+                    </span></button>
             </div>
         </section>
         <section class="section-4 flex-r">
@@ -195,16 +195,18 @@
                 <h2>Viaja. Sube a una bicicleta. Sube a un scooter. Disfruta al máximo.</h2>
                 <p>Tenemos opciones para llevarte a donde tengas que ir. Elige un tipo de viaje* que se ajuste a tu
                     estado de ánimo y presupuesto.</p>
-                <button><span class="material-symbols-outlined">
-                        arrow_back
-                    </span>
-                </button>
-                <button><span class="material-symbols-outlined">
-                        arrow_forward
-                    </span>
-                </button>
+                <div class="flex-r btn-c2-div">
+                    <button class="btn-c2 btn-r-c2" id="btnR2"><span class="material-symbols-outlined">
+                            arrow_back
+                        </span>
+                    </button>
+                    <button class="btn-c2 btn-s-c2" id="btnS2"><span class="material-symbols-outlined">
+                            arrow_forward
+                        </span>
+                    </button>
+                </div>
             </div>
-            <div class="flex-r div-mayor">
+            <div class="flex-r div-mayor" id="carrusel2">
                 <div class="w-25">
                     <h2>Espera y ahorra</h2>
                     <img src="./assets/carrusel/carrusel1.PNG" alt="">
@@ -212,10 +214,11 @@
                         <li>Economico</li>
                         <li>Privado</li>
                     </ul>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus nihil nisi, voluptatibus quo
-                        possimus, rem, itaque impedit culpa temporibus consectetur porro deleniti. Distinctio dolore eaque
+                    <p hidden>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus nihil nisi, voluptatibus quo
+                        possimus, rem, itaque impedit culpa temporibus consectetur porro deleniti. Distinctio dolore
+                        eaque
                         illo aliquam eos iste doloremque.</p>
-                    <button>Reservar este viaje</button>
+                    <button class="button-2" hidden>Reservar este viaje</button>
                 </div>
                 <div class="w-25">
                     <h2>Compartido</h2>
@@ -224,10 +227,11 @@
                         <li>Para cualquier presupuesto</li>
                         <li>Privado</li>
                     </ul>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus nihil nisi, voluptatibus quo
-                        possimus, rem, itaque impedit culpa temporibus consectetur porro deleniti. Distinctio dolore eaque
+                    <p hidden>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus nihil nisi, voluptatibus quo
+                        possimus, rem, itaque impedit culpa temporibus consectetur porro deleniti. Distinctio dolore
+                        eaque
                         illo aliquam eos iste doloremque.</p>
-                    <button>Reservar este viaje</button>
+                    <button class="button-2" hidden>Reservar este viaje</button>
                 </div>
                 <div class="w-25">
                     <h2>Lyft</h2>
@@ -236,10 +240,11 @@
                         <li>Eficiente</li>
                         <li>Privado</li>
                     </ul>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus nihil nisi, voluptatibus quo
-                        possimus, rem, itaque impedit culpa temporibus consectetur porro deleniti. Distinctio dolore eaque
+                    <p hidden>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus nihil nisi, voluptatibus quo
+                        possimus, rem, itaque impedit culpa temporibus consectetur porro deleniti. Distinctio dolore
+                        eaque
                         illo aliquam eos iste doloremque.</p>
-                    <button>Reservar este viaje</button>
+                    <button class="button-2" hidden>Reservar este viaje</button>
                 </div>
                 <div class="w-25">
                     <h2>Bicicletas y scooters</h2>
@@ -248,10 +253,11 @@
                         <li>Eficiente</li>
                         <li>Ecologico</li>
                     </ul>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus nihil nisi, voluptatibus quo
-                        possimus, rem, itaque impedit culpa temporibus consectetur porro deleniti. Distinctio dolore eaque
+                    <p hidden>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus nihil nisi, voluptatibus quo
+                        possimus, rem, itaque impedit culpa temporibus consectetur porro deleniti. Distinctio dolore
+                        eaque
                         illo aliquam eos iste doloremque.</p>
-                    <button>Reservar este viaje</button>
+                    <button class="button-2" hidden>Reservar este viaje</button>
                 </div>
                 <div class="w-25">
                     <h2>Priority</h2>
@@ -260,10 +266,11 @@
                         <li>Eficiente</li>
                         <li>Privado</li>
                     </ul>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus nihil nisi, voluptatibus quo
-                        possimus, rem, itaque impedit culpa temporibus consectetur porro deleniti. Distinctio dolore eaque
+                    <p hidden>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus nihil nisi, voluptatibus quo
+                        possimus, rem, itaque impedit culpa temporibus consectetur porro deleniti. Distinctio dolore
+                        eaque
                         illo aliquam eos iste doloremque.</p>
-                    <button>Reservar este viaje</button>
+                    <button class="button-2" hidden>Reservar este viaje</button>
                 </div>
                 <div class="w-25">
                     <h2>Modalidad preferente</h2>
@@ -272,10 +279,11 @@
                         <li>Autos con más espacio</li>
                         <li>Los mejores conductores</li>
                     </ul>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus nihil nisi, voluptatibus quo
-                        possimus, rem, itaque impedit culpa temporibus consectetur porro deleniti. Distinctio dolore eaque
+                    <p hidden>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus nihil nisi, voluptatibus quo
+                        possimus, rem, itaque impedit culpa temporibus consectetur porro deleniti. Distinctio dolore
+                        eaque
                         illo aliquam eos iste doloremque.</p>
-                    <button>Reservar este viaje</button>
+                    <button class="button-2" hidden>Reservar este viaje</button>
                 </div>
                 <div class="w-25">
                     <h2>Alquileres</h2>
@@ -285,10 +293,11 @@
                         <li>Sin complicaciones</li>
                         <li>Independencia</li>
                     </ul>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus nihil nisi, voluptatibus quo
-                        possimus, rem, itaque impedit culpa temporibus consectetur porro deleniti. Distinctio dolore eaque
+                    <p hidden>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus nihil nisi, voluptatibus quo
+                        possimus, rem, itaque impedit culpa temporibus consectetur porro deleniti. Distinctio dolore
+                        eaque
                         illo aliquam eos iste doloremque.</p>
-                    <button>Reservar este viaje</button>
+                    <button class="button-2" hidden>Reservar este viaje</button>
                 </div>
                 <div class="w-25">
                     <h2>Lyft XL</h2>
@@ -297,10 +306,11 @@
                         <li>Asientos adicionales</li>
                         <li>Privado</li>
                     </ul>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus nihil nisi, voluptatibus quo
-                        possimus, rem, itaque impedit culpa temporibus consectetur porro deleniti. Distinctio dolore eaque
+                    <p hidden>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus nihil nisi, voluptatibus quo
+                        possimus, rem, itaque impedit culpa temporibus consectetur porro deleniti. Distinctio dolore
+                        eaque
                         illo aliquam eos iste doloremque.</p>
-                    <button>Reservar este viaje</button>
+                    <button class="button-2" hidden>Reservar este viaje</button>
                 </div>
                 <div class="w-25">
                     <h2>Lyft Lux</h2>
@@ -309,10 +319,11 @@
                         <li>Eficiente</li>
                         <li>Premium</li>
                     </ul>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus nihil nisi, voluptatibus quo
-                        possimus, rem, itaque impedit culpa temporibus consectetur porro deleniti. Distinctio dolore eaque
+                    <p hidden>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus nihil nisi, voluptatibus quo
+                        possimus, rem, itaque impedit culpa temporibus consectetur porro deleniti. Distinctio dolore
+                        eaque
                         illo aliquam eos iste doloremque.</p>
-                    <button>Reservar este viaje</button>
+                    <button class="button-2" hidden>Reservar este viaje</button>
                 </div>
                 <div class="w-25">
                     <h2>Tpte. Publico</h2>
@@ -321,10 +332,11 @@
                         <li>Economico</li>
                         <li>Ecologico</li>
                     </ul>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus nihil nisi, voluptatibus quo
-                        possimus, rem, itaque impedit culpa temporibus consectetur porro deleniti. Distinctio dolore eaque
+                    <p hidden>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus nihil nisi, voluptatibus quo
+                        possimus, rem, itaque impedit culpa temporibus consectetur porro deleniti. Distinctio dolore
+                        eaque
                         illo aliquam eos iste doloremque.</p>
-                    <button>Reservar este viaje</button>
+                    <button class="button-2" hidden>Reservar este viaje</button>
                 </div>
             </div>
             <ul>

@@ -7,6 +7,10 @@ document.addEventListener("DOMContentLoaded", e =>{
     const btnRegresarC1 = document.querySelector("#btnRegresar")
     const radioC1 = document.querySelectorAll('#posicionR input')
     const carrusel1 = document.querySelector("#carrusel1")
+    const btnSiguienteC2 = document.querySelector("#btnS2")
+    const btnRegresarC2 = document.querySelector("#btnR2")
+    const carrusel2 = document.querySelector("div#carrusel2")
+    const carrusel2div = document.querySelector(".div-mayor")
 
     //EVENTO PARA ACTIVAR CUADROS DE REGISTRO
     btnRegistrar.addEventListener("mouseover", e=>{
@@ -104,6 +108,22 @@ document.addEventListener("DOMContentLoaded", e =>{
             }
         })
     }
+    const moverScrol = (signo) =>{
+        carrusel2div.scrollBy({
+            top: 0,
+            left: `${signo}`+250,
+            behavior: "smooth"
+        })
+        if(signo === '+'){
+            
+        }
+    }
+    btnSiguienteC2.addEventListener("click", e =>{
+        moverScrol('+');
+    })
+    btnRegresarC2.addEventListener("click", e=>{
+        moverScrol('-')
+    })
 })
 
 

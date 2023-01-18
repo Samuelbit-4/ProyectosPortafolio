@@ -1,0 +1,35 @@
+@import "../node_modules/bootstrap/scss/bootstrap";
+@import "../node_modules/bootstrap/scss/containers";
+@import "../node_modules/bootstrap/scss/grid";
+
+@import url('https://fonts.googleapis.com/css2?family=Dosis&display=swap');
+
+$font-body: 'Dosis', sans-serif;
+
+body {
+    font-family: $font-body !important;
+    .sec-1{
+        height: 80vh !important;
+    }
+    .btn-light:hover {
+        color: $indigo-500 !important;
+    }
+
+    .tipo {
+        background: rgb(140, 104, 192);
+        background: linear-gradient(90deg, rgba(140, 104, 192, 1) 50%, rgba(89, 53, 154, 1) 100%);
+    }
+
+    main {
+        .u-1 {
+            background-image: url('../assets/snow-mountain-with-aurora-borealis.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .cardi {
+            background: rgb(140, 104, 192);
+            background: linear-gradient(90deg, rgba(140, 104, 192, 1) 50%, rgba(89, 53, 154, 1) 100%);
+        }
+    }
+}

@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets/breeze.png" type="image/x-icon">
     <link rel="stylesheet" href="./css/style.css">
     <title>CLIMA</title>
 </head>
@@ -34,37 +35,37 @@
         <section class="container u-1 text-white rounded-4 sec-1">
             <div class="row h-100 p-3 d-flex flex-direction-column align-items-center">
                 <div class="col ">
-                    <div class="row">
+                    <div class="row" id="ciudadub">
                         <div class="col-9">
-                            <h1 class="display-1">Ciudad</h1>
+                            <h1 class="display-1" id="city">Ciudad</h1>
                             <div class="d-flex gap-5">
-                                <h3 class="fs-4">dia</h3>
-                                <h3 class="fs-4">actualizacion</h3>
+                                <h3 class="fs-4" id="day">dia</h3>
+                                <h3 class="fs-4" id="time">actualizacion</h3>
                             </div>
                             <div class="row w-50 rounded-4 bg-white text-dark p-3 mt-5">
                                 <div class="col-6 d-flex align-items-center gap-2">
                                     <div>
                                         <img src="./assets/breeze.png" alt="" width="30px">
                                     </div>
-                                    <h3>wind</h3>
+                                    <h3 id="wind1">wind</h3>
                                 </div>
                                 <div class="col-6 d-flex align-items-center gap-2">
                                     <div>
                                         <img src="./assets/breeze.png" alt="" width="30px">
                                     </div>
-                                    <h3>wind</h3>
+                                    <h3 id="wind2">wind</h3>
                                 </div>
                                 <div class="col-6 d-flex align-items-center gap-2">
                                     <div>
                                         <img src="./assets/storm.png" alt="" width="30px">
                                     </div>
-                                    <h3>rain</h3>
+                                    <h3 id="rain1">rain</h3>
                                 </div>
                                 <div class="col-6 d-flex align-items-center gap-2">
                                     <div>
                                         <img src="./assets/storm.png" alt="" width="30px">
                                     </div>
-                                    <h3>rain</h3>
+                                    <h3 id="rain2">rain</h3>
                                 </div>
                             </div>
                         </div>
@@ -77,9 +78,9 @@
                                 <span>Today</span>
                             </div>
                             <div class="text-center">
-                                <img src="./assets/tipos/nublado.png" alt="" width="50%"> <!--JAVASCRIPT-->
-                                <h1>Grados</h1>
-                                <h3>margen</h3>
+                                <img src="./assets/tipos/nublado.png" alt="" width="50%" id="imgClima"> <!--JAVASCRIPT-->
+                                <h1 id="grade">Grados</h1>
+                                <h3 id="marginGrade">margen</h3>
                             </div>
                         </div>
                     </div>

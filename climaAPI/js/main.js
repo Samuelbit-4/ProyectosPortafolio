@@ -10,21 +10,22 @@ const rain1 = document.querySelector("#rain1");
 const rain2 = document.querySelector("#rain2");
 const grados = document.querySelector("#grade");
 const gradosMargen = document.querySelector("#marginGrade");
-const imgClima = document.querySelector("#imgClima")
+const imgClima = document.querySelector("#imgClima");
+const header = document.querySelector("header")
 const main = document.querySelector("main");
-const body = document.querySelector("body")
-main.style.filter = "blur(15px)"
+const body = document.querySelector("body");
+
 
 
 //LLAVES DE API
 const key = "b6830ef86898875ed0afef8120b7d9b8";
 const url = "https://api.openweathermap.org/data/2.5/weather?";
-let latitud = 0;
-let longitud = 0;
+
 let ubication;
 const inicio = document.createElement("div")
 const funcionInit = () => {
-    main.style.filter = "blur(15px)"    
+    main.style.filter = "blur(15px)"   
+    header.style.filter = "blur(15px)" 
     inicio.classList = "border border-primary rounded-4 bg-white p-5 position-absolute z-3 top-50 start-50 translate-middle d-flex flex-column align-items-center justify-content-center"
     inicio.innerHTML = `
         <img src="./assets/VAyR.gif" alt="progress">
@@ -70,6 +71,7 @@ function coordenadas(latitude, longitude) {
       else {
         if(showWeather(data)){
             main.removeAttribute("style");
+            header.style.removeProperty("filter")
             inicio.remove();
             showWeather(data); 
         } else{

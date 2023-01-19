@@ -24,14 +24,14 @@ const url = "https://api.openweathermap.org/data/2.5/weather?";
 let ubication;
 const inicio = document.createElement("div")
 const funcionInit = () => {
-    main.style.filter = "blur(15px)"   
-    header.style.filter = "blur(15px)" 
-    inicio.classList = "border border-primary rounded-4 bg-white p-5 position-absolute z-3 top-50 start-50 translate-middle d-flex flex-column align-items-center justify-content-center"
-    inicio.innerHTML = `
-        <img src="./assets/VAyR.gif" alt="progress">
-        <h1 class="display-2">Cargando</h1>
-    `
-    body.appendChild(inicio)
+    // main.style.filter = "blur(15px)"   
+    // header.style.filter = "blur(15px)" 
+    // inicio.classList = "border border-primary rounded-4 bg-white p-5 position-absolute z-3 top-50 start-50 translate-middle d-flex flex-column align-items-center justify-content-center"
+    // inicio.innerHTML = `
+    //     <img src="./assets/VAyR.gif" alt="progress">
+    //     <h1 class="display-2">Cargando</h1>
+    // `
+    // body.appendChild(inicio)
   if (!"geolocation" in navigator) {
     return alert(
       "Tu navegador no soporta el acceso a la ubicación. Intenta con otro"
@@ -70,9 +70,9 @@ function coordenadas(latitude, longitude) {
       } 
       else {
         if(showWeather(data)){
-            main.removeAttribute("style");
-            header.style.removeProperty("filter")
-            inicio.remove();
+            // main.removeAttribute("style");
+            // header.style.removeProperty("filter")
+            // inicio.remove();
             showWeather(data); 
         } else{
             showError("Upss... parece que hubo un error\nintenta más tarde");

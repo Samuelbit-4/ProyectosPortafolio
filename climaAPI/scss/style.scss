@@ -5,12 +5,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Dosis&display=swap');
 
 $font-body: 'Dosis', sans-serif;
-
+$border-color: black;
 body {
     font-family: $font-body !important;
-    .sec-1{
+
+    .sec-1 {
         height: 80vh !important;
     }
+
     .btn-light:hover {
         color: $indigo-500 !important;
     }
@@ -31,5 +33,34 @@ body {
             background: rgb(140, 104, 192);
             background: linear-gradient(90deg, rgba(140, 104, 192, 1) 50%, rgba(89, 53, 154, 1) 100%);
         }
+
+        .dias {
+            overflow-x: scroll;
+        }
+        .dia-card{
+            background: rgb(140, 104, 192);
+            background: linear-gradient(90deg, rgb(100, 18, 214) 50%, rgba(89, 53, 154, 1) 100%);
+            color: white;           
+        }
+        .hora-card{
+            background: rgb(140, 104, 192);
+            background: linear-gradient(90deg, rgb(66, 51, 87) 50%, rgba(89, 53, 154, 1) 100%);
+            color: white;
+        }
+        .clima-dia:hover {
+            background: #ECE9E6;  /* fallback for old browsers */
+            background: -webkit-linear-gradient(to left, #FFFFFF, #ECE9E6);  /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to left, #FFFFFF, #ECE9E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */                        
+            transition: 0.5s all;
+            border: $border-width solid $border-color;
+        }
+        .fuente-1-card{
+            color: #353589;
+            font-weight: bolder;
+        }
+        .fuente-2-card{
+            color: #7668e5;
+        }
     }
+
 }

@@ -12743,5 +12743,32 @@ body main .cardi {
   background: rgb(140, 104, 192);
   background: linear-gradient(90deg, rgb(140, 104, 192) 50%, rgb(89, 53, 154) 100%);
 }
+body main .dias {
+  overflow-x: scroll;
+}
+body main .dia-card {
+  background: rgb(140, 104, 192);
+  background: linear-gradient(90deg, rgb(100, 18, 214) 50%, rgb(89, 53, 154) 100%);
+  color: white;
+}
+body main .hora-card {
+  background: rgb(140, 104, 192);
+  background: linear-gradient(90deg, rgb(66, 51, 87) 50%, rgb(89, 53, 154) 100%);
+  color: white;
+}
+body main .clima-dia:hover {
+  background: #ECE9E6; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #FFFFFF, #ECE9E6); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #FFFFFF, #ECE9E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  transition: 0.5s all;
+  border: 1px solid black;
+}
+body main .fuente-1-card {
+  color: #353589;
+  font-weight: bolder;
+}
+body main .fuente-2-card {
+  color: #7668e5;
+}
 
 /*# sourceMappingURL=style.css.map */

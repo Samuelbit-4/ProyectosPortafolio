@@ -12,7 +12,7 @@
 
 <body>
     <header class="container p-3">
-        <div class="row">
+        <nav class="row">
             <div class="col">
                 <h2 class="display-5">El Clima</h2>
             </div>
@@ -89,91 +89,30 @@
         </section>
         <section class="container mt-5">
             <div class="row mt-3">
-                <div class="col d-flex gap-3">
-                    <button type="button" class="btn btn-outline-primary border border-0 border-bottom border-primary border-3 p-2 fs-3 disabled">Today</button>
-                    <button type="button" class="btn btn-outline-primary border border-0 border-bottom border-primary border-3 p-2 fs-3">Weekly</button>
+                <div class="col container d-flex gap-3 justify-content-between">
+                    <div >
+                        <button type="button" class="btn btn-outline-primary border border-0 border-bottom border-primary border-3 p-2 fs-3 disabled">Today</button>
+                        <button type="button" class="btn btn-outline-primary border border-0 border-bottom border-primary border-3 p-2 fs-3">Weekly</button>
+                    </div>
+                    <div class="d-flex align-items-center gap-3">
+                        <button type="button" id="back" class="rounded-5 p-0 btn btn-outline-primary d-flex align-items-end justify-content-center"><svg xmlns="http://www.w3.org/2000/svg" width="45" height="45 " fill="currentColor" class="bi bi-arrow-left-circle" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-4.5-.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5z"/>
+                          </svg></button>
+                          <button type="button" id="forward" class="rounded-5 p-0 btn btn-outline-primary d-flex align-items-end justify-content-center"><svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="currentColor" class="bi bi-arrow-right-circle" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"/>
+                          </svg></button>
+                    </div>
                 </div>
             </div>
-            <div class="row dias mt-3 d-flex gap-3 flex-nowrap">
-                <div class="col-3 clima-dia d-flex flex-column align-items-center justify-content-center p-3 rounded-4">
-                    <img src="./assets/tipos/nublado.png" alt="" width="128px">
-                    <div class="d-flex gap-2 mt-2">
-                        <h2 class="rounded-4 dia-card p-2 fs-5">SUN</h2>
-                        <h2 class="rounded-4 hora-card p-2 fs-5">4:00 PM</h2>
-                    </div>
-                    <div class="d-flex gap-3 w-100 justify-content-center">
-                        <h1 class="fuente-1-card">23 °C</h1>
-                        <h3 class="align-self-end fuente-2-card">30 °C</h3>
-                    </div>
-                    <div class="d-flex flex-column align-items-center justify-content-center">
-                        <div class="d-flex w-100 gap-3">
-                            <h3 class="w-50 fs-5">
-                                <img src="" alt="">
-                                45km/hr
-                            </h3>
-                            <h3 class="w-50 fs-5">
-                                <img src="" alt="">
-                                45km/hr
-                            </h3>
-                        </div>
-                        <h3 class="w-100 text-center fs-5">light rain</h3>
-                    </div>
-                </div>
-                <div class="col-3 clima-dia d-flex flex-column align-items-center justify-content-center p-3">
-                    <img src="./assets/tipos/nublado.png" alt="" width="128px">
-                    <div>
-                        <h2></h2>
-                        <h2></h2>
-                    </div>
-                    <div>
-                        <h1></h1>
-                        <h3></h3>
-                    </div>
-                    <div>
-                        <h3></h3>
-                        <h3></h3>
-                        <h3></h3>
-                    </div>
-                </div>
-                <div class="col-3 clima-dia">
-                    <img src="./assets/tipos/nublado.png" alt="" width="128px">
-                    <div>
-                        <h2></h2>
-                        <h2></h2>
-                    </div>
-                    <div>
-                        <h1></h1>
-                        <h3></h3>
-                    </div>
-                    <div>
-                        <h3></h3>
-                        <h3></h3>
-                        <h3></h3>
-                    </div>
-                </div>
-                <div class="col-3 clima-dia">
-                    <img src="./assets/tipos/nublado.png" alt="" width="128px">
-                    <div>
-                        <h2></h2>
-                        <h2></h2>
-                    </div>
-                    <div>
-                        <h1></h1>
-                        <h3></h3>
-                    </div>
-                    <div>
-                        <h3></h3>
-                        <h3></h3>
-                        <h3></h3>
-                    </div>
-                </div>
+            <div class="row container dias mt-3 d-flex gap-3 flex-nowrap" id="dias">
             </div>
         </section>
     </main>
     <footer>
 
     </footer>
-    <script src="./js/main.js"></script>
+
+    <script type="module" src="./js/main.js"></script>
 </body>
 
 </html>
